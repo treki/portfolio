@@ -1,0 +1,56 @@
+
+.clear{
+	clear: both;
+}
+.container{
+	margin: auto;
+    width: 70%;
+    border:3px solid #7D7D7D;
+    padding: 10px;
+}
+#navBar{
+    position: absolute;
+    background-color: #FFF;
+    width: 60%;
+    height: 30px;
+}
+
+#navBar,li.nav{
+	list-style-type: none;
+	display: inline;
+	min-width: 4em;
+	padding-bottom: 25px;
+	padding-right: 25px;
+	text-align: right;
+}
+#navBar li.nav a:hover{
+	text-decoration: underline;
+	color: #7D7D7D;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+#title{
+	color: #171717;
+}
+.address{
+	padding-top: 80px;
+	display: block;
+	float: right;
+	margin-top: -20px;
+}
+#noStyle li{
+	list-style-type: none;
+}
+.containerBody{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#padding{
+	padding: 30px;
+}
+
+ul.projectList{
+	list-style-type: square;
+}

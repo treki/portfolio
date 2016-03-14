@@ -1,0 +1,404 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+	margin: 0 0 100px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+#temp{
+	color:#b30000;
+}
+#navBar{
+    position: fixed;
+    z-index: 9;
+    background-color: #F5F2F2;
+    width: 100%;
+    height: 30px;
+
+}
+
+#navBar,li{
+	list-style-type: none;
+	display: inline;
+	min-width: 4em;
+	padding-bottom: 25px;
+	padding-right: 45px;
+	text-align: center;
+
+}
+#navBar li a:hover{
+	text-decoration: underline;
+	color: #7D7D7D;
+}
+.nav {
+    color: #423F3F;
+    font-size: 16px;
+    float: right;
+    padding: 10px;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+#header{
+	background:url('img/img1.jpg');
+    background-size: cover;
+    height:400px;
+}
+#header, h1{
+	padding-top: 75px;
+}
+#share{
+	left: 50%;
+}
+
+img#git, img#linkedin, img#google{
+ 	position: absolute;
+    top: 350px;
+    left: 48%;
+    width: 35px;
+    opacity: 0.5;
+}
+img#linkedin{
+	left: 40%;
+
+}
+img#google{
+	left: 56%;
+}
+img#git:hover, img#linkedin:hover, img#google:hover{
+	opacity: 0.8;
+
+}
+#about{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.flip-container {
+	width: 100%;
+	margin: 0 auto;
+	perspective: 1000;
+	-webkit-perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 400px;
+	height: 480px;
+}
+.flipper {
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+#me{
+	width: 25%;
+}
+#expertise{
+	background:url('img/img2.jpg');
+    background-size: cover;
+    height:400px;
+}
+#expertise, h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.clear{
+	clear: both;
+}
+#skills li{
+	line-height:32px;
+	display:inline;
+	border-radius:4px;
+	padding:4px 9px;
+	margin: 10px;
+}
+
+.project {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    display: block;
+    width: 900px;
+    margin:0 auto;
+
+}
+.projectCol {
+	float: left;
+}
+.projectCol img{
+	width:300px;
+}
+.descriptionCon{
+	float: right;
+}
+.descriptionCon a:link{
+	text-decoration: none;
+
+}
+a:hover{
+	text-decoration: underline;
+	color: #72797A;
+}
+
+#skills li{
+	color:#FFF;
+	line-height:32px;
+	display:inline;
+	border-radius:4px;
+	font-size:12px;
+	background:#7D7D7D;
+	padding:4px 9px;
+
+}
+
+.descriptionCon{
+	width:45%;
+
+}
+
+#map{
+	width:100%;
+	height:350px;
+}
+
+.contactBar {
+    margin: 10px;
+    padding: 0 7px 0 7px;
+    width: 850px;
+    height: 700px;
+    border-radius: 10px;
+}
+#social li{
+	float: left;
+	padding-top: 0;
+	margin-left: 30px;
+	text-align: justify;
+	text-decoration: none;
+	display: block;
+}
+#social img{
+	padding: 2px;
+	width: 35px;
+	opacity: 0.5;
+}
+#social img:hover{
+	opacity: 1;
+}
+
+#formMain{
+	width:100%;
+	padding-top: 20px;
+	text-align: justify;
+}
+
+#formDiv {
+	background-color:rgba(72,72,72,0.4);
+	padding:25px;
+	padding-bottom: 5px;
+	left: 50%;
+	position: absolute;
+  	margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedbackInput {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  	font-weight:500;
+	font-size: 16px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedbackInput:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #7D7D7D;
+	color: #000;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+#name, #email, #write{
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#name, #name:focus{
+	background-image: url(icon/user.jpg);
+}
+#email, #email:focus{
+	background-image: url(icon/email.jpg);
+}
+#write{
+	background-image: url(icon/write.jpg);
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#submit{
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #333333;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+ 	margin-top:-4px;
+
+}
+
+#submit:hover{
+	background-color: rgba(0,0,0,0);
+	color: #7D7D7D;
+}
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1072px){
+	.project{
+		padding: 0 30px;
+		text-align: center;
+		width: 100%;
+	}
+	.projectCol{
+		width: 100%;
+    	text-align: center;
+    	display: block;
+    	padding: 0!important;
+	}
+	.projectCol img{
+		width: 250;
+	}
+	.descriptionCon{
+	    width: 100%;
+	    text-align: center;
+		display: block;
+		padding: 0!important;
+		}
+	.descriptionCon p{
+		padding-right: 30px;
+	}
+	}
+
+@media only screen and (max-width: 700px) {
+	.nav {
+		font-size: 14px;
+		width: 40px;
+	}
+	.flip-container, .front, .back {
+	width: 350px;
+	height: 430px;
+	}
+
+	#formMain{
+	width:60%;
+	}
+		
+	#social img{
+	padding: 1px;
+	width: 30px;
+	}
+	}
+@media screen and (max-width: 480px){
+	.project{
+		padding-bottom: 0 20px;
+	}
+	.projectCol{
+		width: 100%;
+	}
+	.projectCol img{
+		width: 350px;
+	}
+	.nav {
+	font-size: 12px;
+
+	}
+	#share{
+	display: none;
+	}
+	#social img{
+	padding: 1px;
+	width: 30px;
+	}
+	#skills li{
+	line-height:42px;
+	font-size:14px;
+	margin: 10px;
+	}
