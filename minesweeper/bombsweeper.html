@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bombsweeper</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wholePage">
+	<div id="title">
+	<h1>Welcome to Free Bombsweeper</h1>
+	</div>
+	<div class="container">
+		<h1>Play</h1>
+		<div id="board"></div>
+		<form id="start">
+			<input type="number" value="18" name="width"> &times;
+			<input type="number" value="18" name="height"> with approximately
+			<input type="number" value="10" name="mines">% mines
+			<input type="submit" value="Restart">
+		</form>
+	</div>
+<footer>
+	<p>Copyright &copy; By Tuya Senff </p>
+</footer>
+</div>
+
+	<script src="bombsweeper.js"></script>
+	<script>
+		var form = document.getElementById('start');
+		form.addEventListener('submit', function(e) {
+			e.preventDefault();
+
+			start();
+		});
+
+		function start() {
+			var w = parseInt(document.querySelector('input[name=width]').value);
+			var h = parseInt(document.querySelector('input[name=height]').value);
+			var m = parseInt(document.querySelector('input[name=mines]').value);
+
+			window.game = new bombsweeper(w, h, m, document.getElementById('board'));
+		}
+
+		document.addEventListener('keydown', function(e) {
+			if (e.which == 27)
+				start();
+		});
+
+		start();
+	</script>
+	<link href='http://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Layout */
+html {
+	background-image: url("backgroundImg copy.png");
+	font-family: 'Aclonica', sans-serif;
+	text-align: center;
+}
+.wholePage{
+	width: 90%;
+}
+#title{
+	padding: 20px;
+	color: 
+}
+
+.container {
+	background-image: url("backgroundImg2 copy.png");
+	border-radius: 1.5em;
+	display: inline-block;
+	padding: 1em 2em 1.5em;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 55px;
+	margin: 0 0 0.3em;
+	color: #FFFFFF;
+}
+
+.stats {
+	background: #FFFFFF;
+	border-top-left-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+	font-family: 'Aclonica', sans-serif;
+	padding: 0.2em 0.2em;
+}
+.stats .flags, .stats .time {
+	font-size: 1.5em;
+	margin-top: 0.05em;
+	padding: 0.1em 0.3em;
+}
+.stats .flags {
+	float: left;
+}
+.stats .time {
+	float: right;
+}
+.stats .smiley {
+	font-size: 2.2em;
+	line-height: 1;
+}
+
+#board table {
+    border-collapse: collapse;
+	clear: both;
+	font-size: 1.7em;
+	color: yellow;
+
+}
+#board table td {
+	border: 1px solid #ccc;
+	height: 1.3em;
+	width: 1.3em;
+	line-height: 0;
+	position: relative;
+	text-align: center;
+
+}
+#board table td:hover:before {
+	outline: 1px solid black;
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#board table td.isMine {
+	/*invisible*/
+}
+#board table td.flag {
+	background: #fdd;
+}
+#board table td.flag:after {
+	color: #990000;
+	content: '\2691';
+}
+#board table td.mine:after {
+	color: #990000;
+	content: '\2600';
+}
+#board table td.revealed-0 {
+	color: #6699cc;
+}
+#board table td.revealed-1 {
+	color: #0066ff;
+}
+#board table td.revealed-2 {
+	color: #66ff33;
+}
+#board table td.revealed-3 {
+	color: #66cc33;
+}
+#board table td.revealed-4 {
+	color: #6633ff;
+}
+
+form {
+	margin-top: .9em;
+	color: #FFFFFF;
+	font-size: 1.3em;
+}
+
+input[type=number] {
+	width: 3em;
+	height: 1.5em;
+	font-size: 1.3em;
+}
+
+input[type=submit] {
+	background: #45c;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	display: block;
+	font-size: 2em;
+	margin: 0.2em auto 0;
+	padding: 0.3em 0.6em;
+}
+input[type=submit]:hover {
+	background: #34a;
+}
