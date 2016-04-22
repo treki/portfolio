@@ -2,10 +2,10 @@
 html {
     position: relative;
     min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
 	margin: 0 0 100px;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 }
 #temp{
@@ -31,11 +31,11 @@ body{
 }
 #navBar li a:hover{
 	text-decoration: underline;
-	color: #7D7D7D;
+	color: #3998E6;
 }
 .nav {
-    color: #423F3F;
-    font-size: 16px;
+    color: #000;
+    font-size: 20px;
     float: right;
     padding: 10px;
 }
@@ -59,18 +59,17 @@ img#git, img#linkedin, img#google{
  	position: absolute;
     top: 350px;
     left: 48%;
-    width: 35px;
-    opacity: 0.5;
+    width: 45px;
+    opacity: 0.3;
 }
 img#linkedin{
-	left: 40%;
-
+	left: 30%;
 }
 img#google{
-	left: 56%;
+	left: 66%;
 }
 img#git:hover, img#linkedin:hover, img#google:hover{
-	opacity: 0.8;
+	opacity: 4.8;
 
 }
 #about{
@@ -166,16 +165,16 @@ img#git:hover, img#linkedin:hover, img#google:hover{
 }
 a:hover{
 	text-decoration: underline;
-	color: #72797A;
+	color: #3998E6;
 }
 
 #skills li{
 	color:#FFF;
 	line-height:32px;
 	display:inline;
-	border-radius:4px;
+	border-radius:3px;
 	font-size:12px;
-	background:#7D7D7D;
+	background:#3998E6;
 	padding:4px 9px;
 
 }
@@ -359,8 +358,9 @@ footer{
 
 @media only screen and (max-width: 700px) {
 	.nav {
-		font-size: 14px;
+		font-size: 16px;
 		width: 40px;
+		padding: 8px;
 	}
 	.flip-container, .front, .back {
 	width: 350px;
@@ -368,7 +368,7 @@ footer{
 	}
 
 	#formMain{
-	width:60%;
+	width:40%;
 	}
 		
 	#social img{
@@ -387,14 +387,15 @@ footer{
 		width: 350px;
 	}
 	.nav {
-	font-size: 12px;
+	font-size: 14px;
+	padding: 5px;
 
 	}
 	#share{
 	display: none;
 	}
 	#social img{
-	padding: 1px;
+	padding: -40px;
 	width: 30px;
 	}
 	#skills li{
