@@ -1,29 +1,30 @@
 /* Layout */
 html {
-	background-image: url("backgroundImg copy.png");
+	width:100%;
 	font-family: 'Aclonica', sans-serif;
 	text-align: center;
+
 }
 .wholePage{
-	width: 90%;
+	width: 100%;
 }
 #title{
-	padding: 20px;
+	padding: 1px;
 	color: 
 }
 
 .container {
-	background-image: url("backgroundImg2 copy.png");
-	border-radius: 1.5em;
+	background-image: url("img2.png");
+	border-radius: 0.5em;
 	display: inline-block;
 	padding: 1em 2em 1.5em;
 }
 
 h1 {
-	font-weight: 500;
-	font-size: 55px;
+	font-weight: 300;
+	font-size: 35px;
 	margin: 0 0 0.3em;
-	color: #FFFFFF;
+	color: #000;
 }
 
 .stats {
@@ -45,7 +46,7 @@ h1 {
 	float: right;
 }
 .stats .smiley {
-	font-size: 2.2em;
+	font-size: 2.0em;
 	line-height: 1;
 }
 
@@ -112,9 +113,9 @@ form {
 }
 
 input[type=number] {
-	width: 3em;
-	height: 1.5em;
-	font-size: 1.3em;
+	width: 2em;
+	height: 1.0em;
+	font-size: 1.0em;
 }
 
 input[type=submit] {
