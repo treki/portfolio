@@ -1,14 +1,14 @@
 function big(x){
 	x.style.color = '#FFF';
-	x.style.fontSize = "16px";
+	x.style.fontSize = "14px";
 	x.style.opacity = "0.9";
-	x.style.background = "#154215";
+	x.style.background = "#38B6E8";
 }
 
 function small(x){
 	x.style.color = '#FFF';
 	x.style.fontSize = "12px";
-	x.style.opacity = "0.8";
-	x.style.background = "#7D7D7D";
+	x.style.opacity = "0.9";
+	x.style.background = "#3998E6";
 
 }
